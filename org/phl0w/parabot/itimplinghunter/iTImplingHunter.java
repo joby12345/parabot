@@ -34,14 +34,14 @@ public class iTImplingHunter extends Script implements Paintable {
     public static int lootedItems = 0;
     public static int startXp = 0;
     public static long startTime;
-    public static String selected = "zombie";
+    public static String selected = "kingly";
     public static Impling selectedImpling = Impling.KINGLY;
 
     private final ArrayList<Strategy> strategies = new ArrayList<>();
 
     @Override
     public boolean onExecute() {
-        selected = JOptionPane.showInputDialog("Enter the name of the impling you want to hunt:");
+        selected = JOptionPane.showInputDialog("Kingly");
         selectedImpling = getSelectedImpling();
         startLevel = Utilities.getLevel(Skill.CONSTRUCTION);
         prevInvCount = Inventory.getCount();
